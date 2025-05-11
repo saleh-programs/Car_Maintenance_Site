@@ -1,0 +1,105 @@
+.page-create {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  margin: 0;
+  position: relative;  
+}
+
+.page-create::after {
+  content: "";
+  background-image: url('../../src/assets/images/deadcars.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: .9;
+
+  width: 110%;
+  height: 120%;
+  z-index: -1;
+  position: absolute;
+}
+
+.create{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  position: absolute;
+  margin-top: 120px; 
+  font-size: 18px;
+  background-color: rgb(218, 206, 204);
+  border-radius: 30px;
+  padding: 40px;
+  box-shadow: 10px 10px hsl(0, 28%, 27%);
+
+}
+
+.create input{
+  margin-bottom: 20px;
+  width: 80%;
+  height: 25px;
+  padding: 5px;
+
+}
+.create select{
+  width: 70%;
+}
+
+.create-title{
+  font-size: 35px;
+  text-decoration: underline 2px;
+  text-align: center;
+}
+
+.create-user{
+  margin-top: 30px;
+  font-size: 1.3em;
+}
+.create-pass{
+  margin-top: 20px;
+  font-size: 1.3em;
+
+}
+
+.create-submit{
+  margin-inline: 30px;
+  font-size: 25px;
+  border-radius: 30px;
+  border: 1px solid rgb(241, 187, 187);
+  background-color: rgb(156, 174, 148);
+  color: rgb(39, 1, 1);
+  padding: 10px;
+  font-weight: 700;
+  transition: background-color .1s, color .1s;
+}
+.create-submit:hover{
+  cursor: pointer;
+  background-color: rgb(39, 1, 1);
+  color: rgb(156, 174, 148);;
+}
+
+
+.create-submit-fail{
+  margin-inline: 30px;
+  font-size: 25px;
+  border-radius: 10px;
+  border: 1px solid rgb(241, 187, 187);
+  background-color: rgb(156, 174, 148);
+  padding: 10px;
+  opacity: .3;
+}
+
+
+.create-submit-message{
+  justify-self: center;
+  text-align: center;
+  margin-top: 10px;
+  width: 100%;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  background-color: rgb(131, 34, 34);
+  font-size: 1.5em;
+}
