@@ -4,6 +4,16 @@ import bcrypt
 conn = sqlite3.connect('users.db')
 cursor = conn.cursor()
 
+# create table
+cursor.execute('''
+   CREATE TABLE IF NOT EXISTS users(
+      id INTEGER PRIMARY KEY,
+      user TEXT,
+      pass TEXT,
+      data TEXT
+) 
+''')
+
 #checks if it is a valid login
 def validLogin(username,password):
    cursor.execute(

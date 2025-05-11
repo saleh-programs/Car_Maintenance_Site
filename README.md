@@ -10,7 +10,7 @@ A browser-based application designed to simplify vehicle maintenance tracking fo
 ---
 
 # Disclaimer
-For educational use only. NOT PRODUCTION READY. 
+For educational use only. NOT PRODUCTION READY. Do not trust the claims made in the user agreement! (Legal purposes)
 
 
 ## Features
