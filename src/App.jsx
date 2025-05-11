@@ -52,7 +52,10 @@ function App() {
 
   // Set user data on change if exists
   useEffect(()=>{
-    userData && setSaveInfo(true);
+  
+    const oldUserData = localStorage.getItem("user");
+
+    userData && oldUserData && oldUserData !== JSON.stringify(userData) && setSaveInfo(true); 
     userData && localStorage.setItem("user", JSON.stringify(userData));
 
     if (userData && !vehicleSelected){
