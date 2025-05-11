@@ -3,7 +3,7 @@
 const publicVapidKey = "BPRBR3516pFzNP8WufLyCXf2t_ahKLju7MYJgDujqQDmZeenz07sTMcCy_l5uzreTAJU47ZcD4k5fYjWMcP5-64";
 
 // main backend 
-const baseURL = "https://car-maintenance-app.onrender.com/" 
+const baseURL = "https://car-maintenance-site.onrender.com/"
 // // local backend (development)
 // const baseURL = "http://localhost:8000/" 
 

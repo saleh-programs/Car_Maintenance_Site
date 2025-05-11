@@ -5,6 +5,18 @@ import { MapContainer, TileLayer, Marker, Popup, Circle, useMap } from 'react-le
 import 'leaflet/dist/leaflet.css';
 import { getImage } from '../../backend/requests.js'
 
+//custom map settings
+import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
+import markerIcon from 'leaflet/dist/images/marker-icon.png';
+import markerShadow from 'leaflet/dist/images/marker-shadow.png';
+delete L.Icon.Default.prototype._getIconUrl;
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: markerIcon2x,
+  iconUrl: markerIcon,
+  shadowUrl: markerShadow,
+});
+
+
 // Local Services Page. Shows map and local mechanic shops.
 function LocalServices() {
   const [zipcode, setZipcode] = useState('');
